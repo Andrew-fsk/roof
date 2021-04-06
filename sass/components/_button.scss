@@ -1,0 +1,50 @@
+.button {
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  text-decoration: none;
+  background: linear-gradient(180deg, #FF5E43 5.21%, #FF5539 8.85%, #FF4131 51.04%, #FF4737 100%);
+  box-shadow: 0px -2px 0px #FF755E, 0px 2px 0px #E63925, 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 5px 12px 12px;
+  color: #ffffff;
+  padding: 12px 0;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 100%);
+    transform: skewX(
+                    -25deg
+    );
+    overflow: hidden;
+    animation: shine 3s;
+    -webkit-animation: shine 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+}
+
+@-webkit-keyframes shine {
+  to {
+    left: 100%
+  }
+}
+
+@keyframes shine {
+  to {
+    left: 100%
+  }
+}

@@ -6,9 +6,9 @@
       font-style: $i;
     }
     @if($annex != 'n'){
-      src: url('/fonts/#{$font-name}-#{$annex}.ttf') format('truetype'),
-      url('/fonts/#{$font-name}-#{$annex}.woff') format('woff'),
-      url('/fonts/#{$font-name}-#{$annex}.woff2') format('woff2'),
+      src: url('/fonts/#{$font-name}#{$annex}.ttf') format('truetype'),
+      url('/fonts/#{$font-name}#{$annex}.woff') format('woff'),
+      url('/fonts/#{$font-name}#{$annex}.woff2') format('woff2'),
     }
     @else {
       src: url('/fonts/#{$font-name}.ttf') format('truetype'),
