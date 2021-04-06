@@ -1,5 +1,27 @@
 extends base
 
 block content
-    .container
-        h1 Content
+    section.main-block-wrap
+        img(src='/images/main-block.webp').main-block-image
+        .main-block-dot.dot-1
+            .dot-text Гидроизоляция
+        .main-block-dot.dot-2
+            .dot-text Кровля
+        .main-block-dot.dot-3
+            .dot-text Теплоизоляция
+        .container
+            .main-block
+                .main-block-text
+                    h1 УСЛУГИ КРОВЛИ КРЫШ И <br>ПРОДАЖА КРОВЕЛЬНЫХ<br> МАТЕРИАЛОВ
+                    h2 БЕЗ НАЦЕНОК И ПЕРЕПЛАТ В РАССРОЧКУ ДО<br> 36 МЕСЯЦЕВ
+                    ul
+                        li - ГАРАНТИЯ 50 ЛЕТ
+                        li - СРОК СЛУЖБЫ 100 ЛЕТ
+                        li - ИДЕАЛЬНЫЙ СТЫК БЕЗ ШВОВ
+                        li - 100% ИМИТАЦИЯ КЕРАМИЧЕСКОЙ ЧЕРЕПИЦЫ
+                .main-form
+                    form
+                        .validation-field.js-validation-field.header-form-field
+                            input(name='phone' type='text')
+                            .placeholder Впишите телефон
+                        button.button(type="submit") Заказать звонок
