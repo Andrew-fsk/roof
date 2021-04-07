@@ -17,7 +17,7 @@ function setWrapPadding(){
 }
 
 $(window).bind("load", function () {
-    $("head").append('<link type="text/css" href="/css/sprites.min.css" rel="stylesheet" property="stylesheet">');
+    $("head").append('<link type="text/css" href="./css/sprites.min.css" rel="stylesheet" property="stylesheet">');
 });
 
 $(window).resize(function () {
