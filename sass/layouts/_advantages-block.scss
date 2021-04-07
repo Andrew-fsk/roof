@@ -1,0 +1,91 @@
+.advatages-block-wrap{
+  position: relative;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.advantages-block{
+  @include flexbox;
+  @include flex-wrap(wrap);
+  background: #F9F9F9;
+  box-sizing: border-box;
+  box-shadow: 0 0 28px rgba(104, 104, 104, 0.15);
+  border-radius: 15px;
+  position: relative;
+  padding: 0 60px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  @include breakpoint(sm-down){
+    padding: 20px;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: #ffffff;
+    left: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    top: 15px;
+    @include breakpoint(sm-down){
+      top: 4px;
+      left: 4px;
+      width: calc(100% - 8px);
+      height: calc(100% - 8px);
+    }
+  }
+}
+
+.advantage-image-decor{
+  position: absolute;
+  left: 91%;
+  @include breakpoint(md-down){
+    display: none;
+  }
+}
+
+.advantage-decor-wrap{
+  position: relative;
+}
+
+.advantage-item{
+  position: relative;
+  width: 25%;
+  z-index: 1;
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  @include breakpoint(md-down){
+    width: 50%;
+    &:first-of-type,&:nth-of-type(2){
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.advantage-image{
+  margin-bottom: 13px;
+  height: 174px;
+  @include breakpoint(xs){
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  @include breakpoint(mxs){
+    height: 95px;
+    object-fit: contain;
+    max-width: 125px;
+  }
+}
+
+.advantage-title{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  padding: 0 20px;
+  @include breakpoint(xs){
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
