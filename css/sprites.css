@@ -1,15 +1,15 @@
 .header-column.worktime:after {
-  background-image: url("./images/svg/worktime.svg");
+  background-image: url("../images/svg/worktime.svg");
 }
 .header-column.address:after {
-  background-image: url("./images/svg/address.svg");
+  background-image: url("../images/svg/address.svg");
 }
 .header-column.phones:after {
-  background-image: url("./images/svg/phones.svg");
+  background-image: url("../images/svg/phones.svg");
 }
 
 .header-form-field:after {
-  background-image: url("./images/svg/phone.svg");
+  background-image: url("../images/svg/phone.svg");
 }
 
 /*# sourceMappingURL=sprites.css.map */
