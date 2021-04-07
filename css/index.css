@@ -124,17 +124,17 @@ body {
 @font-face {
   font-family: "Muller";
   font-weight: 400;
-  src: url("./fonts/MullerRegular.ttf") format("truetype"), url("./fonts/MullerRegular.woff") format("woff"), url("./fonts/MullerRegular.woff2") format("woff2");
+  src: url("../fonts/MullerRegular.ttf") format("truetype"), url("../fonts/MullerRegular.woff") format("woff"), url("./fonts/MullerRegular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Muller";
   font-weight: 500;
-  src: url("./fonts/MullerMedium.ttf") format("truetype"), url("./fonts/MullerMedium.woff") format("woff"), url("./fonts/MullerMedium.woff2") format("woff2");
+  src: url("../fonts/MullerMedium.ttf") format("truetype"), url("../fonts/MullerMedium.woff") format("woff"), url("./fonts/MullerMedium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Muller";
   font-weight: 700;
-  src: url("./fonts/MullerBold.ttf") format("truetype"), url("./fonts/MullerBold.woff") format("woff"), url("./fonts/MullerBold.woff2") format("woff2");
+  src: url("../fonts/MullerBold.ttf") format("truetype"), url("../fonts/MullerBold.woff") format("woff"), url("./fonts/MullerBold.woff2") format("woff2");
 }
 * {
   margin: 0;
