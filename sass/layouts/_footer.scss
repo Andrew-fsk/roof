@@ -1,0 +1,137 @@
+footer{
+  background: #1F1F1F;
+  padding: 25px 0;
+  @include breakpoint(sm-down){
+    padding: 20px 0;
+  }
+}
+
+.footer-row{
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(space-between);
+  @include breakpoint(sm-down){
+    .header-form-field{
+      &:after{
+        content: '';
+      }
+      .placeholder{
+        top: 42%;
+        width: initial;
+        left: 38px;
+        @include transform(translate(0));
+      }
+      input{
+        height: 42px;
+      }
+    }
+    @include flex-direction(column);
+    .logo{
+      order: -2;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+    .header-form{
+      order: -1;
+      width: 100%;
+      max-width: 100%;
+      padding: 15px 0;
+      border-top: 1px solid #2E2E2E;
+      border-bottom: 1px solid #2E2E2E;
+      @include flexbox;
+      @include justify-content(center);
+      form{
+        max-width: 180px;
+      }
+      @include breakpoint(xs){
+        .button{
+          height: 40px;
+        }
+      }
+    }
+  }
+  @include breakpoint(mxs){
+    .logo{
+      max-width: initial;
+      height: 50px;
+      img{
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+.social-title{
+  font-size: 16px;
+  color: #929292;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.social-list{
+  @include flexbox;
+  margin-bottom: 25px;
+  @include justify-content(center);
+  @include breakpoint(sm-down){
+    margin-bottom: 0;
+  }
+}
+
+.social-link{
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  svg{
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.footer-social{
+  @include breakpoint(sm-down){
+    width: 100%;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-top: 1px solid #2E2E2E;
+    border-bottom: 1px solid #2E2E2E;
+  }
+}
+
+.copywriting{
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 15px;
+  position: relative;
+  color: #929292;
+  &.mob{
+    display: none;
+  }
+  @include breakpoint(sm-down){
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    &.desck{
+      display: none;
+    }
+    &.mob{
+      display: block;
+      width: 100%;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 80%;
+    @include transform(translateX(-50%));
+    height: 1px;
+    background-color: #282828;
+    @include breakpoint(sm-down){
+      left: 0;
+      @include transform(translateX(0));
+      width: 100%;
+    }
+  }
+}
