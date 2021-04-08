@@ -2,18 +2,71 @@
   @include flex-wrap(wrap);
   @include flexbox;
   margin: 0 -15px;
+  @include breakpoint(xs){
+    margin: 0 -6px;
+  }
 }
 
 .stock-item{
-  width: calc(25% - 15px);
-  margin: 0 7.5px 0 7.5px;
+  width: calc(25% - 30px);
+  margin: 0 15px 0 15px;
   position: relative;
   background: #FFFFFF;
-  padding: 10px;
+  padding: 8px;
   box-shadow: 0 18px 33px 5px rgba(39, 75, 95, 0.15);
   border-radius: 15px;
+  @include breakpoint(sm-down){
+    width: calc(50% - 30px);
+    margin: 0 15px 30px 15px;
+  }
+  @include breakpoint(xs){
+    width: calc(50% - 12px);
+    margin: 0 6px 12px 6px;
+
+  }
   .label{
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(center);
+    font-weight: bold;
+    font-size: 18px;
+    width: 62px;
+    color: #FFFFFF;
+    z-index: 2;
+    height: 62px;
+    left: -25px;
+    top: -25px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FF5551 0%, #FF4946 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     position: absolute;
+    @include breakpoint(sm-down){
+      left: -10px;
+      top: -10px;
+    }
+    @include breakpoint(mxs){
+      width: 27px;
+      height: 27px;
+      font-size: 8px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../images/stocks/label.svg");
+      @include breakpoint(xs){
+        left: 1px;
+        top: 1px;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+      }
+    }
   }
 }
 
@@ -23,10 +76,16 @@
 
 .stock-title{
   font-weight: bold;
-  font-size: 24px;
+  font-size: 23px;
   text-align: center;
   width: 100%;
   display: block;
+  @include breakpoint(md-down){
+    font-size: 18px;
+  }
+  @include breakpoint(mxs){
+    font-size: 12px;
+  }
 }
 
 .stock-image{
@@ -37,4 +96,36 @@
   height: 180px;
   border-radius: 15px;
   margin-bottom: 15px;
+  @include breakpoint(mxs){
+    height: 90px;
+    margin-bottom: 10px;
+  }
+}
+
+.stocks-block-wrap{
+  padding: 120px 0;
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("../images/stocks/stock decor.png");
+  @include breakpoint(sm-down){
+    padding: 50px 0;
+  }
+  @include breakpoint(xs){
+    background-image: initial;
+    padding: 10px 0;
+  }
+}
+
+.stocks-block-title{
+  h3{
+    span{
+      -webkit-text-fill-color: initial;
+      color: $red;
+    }
+    @include breakpoint(mxs){
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+  }
 }
