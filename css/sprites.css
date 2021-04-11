@@ -12,4 +12,8 @@
   background-image: url("../images/svg/phone.svg");
 }
 
+.swiper-button-next:after, .swiper-button-prev:after {
+  background-image: url("../images/svg/arrow.svg");
+}
+
 /*# sourceMappingURL=sprites.css.map */
