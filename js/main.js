@@ -10,6 +10,7 @@ $(document).ready(function () {
             $(this).next(".placeholder").text(placeholder);
         }
     });
+
 });
 
 function setWrapPadding(){

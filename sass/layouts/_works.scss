@@ -1,0 +1,26 @@
+.swiper-container{
+}
+
+.swiper-slide{
+  @include flexbox;
+  .slide-column{
+    &:first-of-type{
+      width: 33.33%;
+    .work-image{
+      padding-top: 100%;
+    }
+    }
+    &:last-of-type{
+      width: 66.66%;
+      @include flexbox;
+      @include flex-wrap(wrap);
+      .work-image{
+        width: 33.33%;
+      }
+    }
+  }
+  .work-image{
+    position: relative;
+    overflow: hidden;
+  }
+}

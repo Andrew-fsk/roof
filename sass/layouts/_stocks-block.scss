@@ -119,6 +119,13 @@
 
 .stocks-block-title{
   h3{
+    margin-bottom: 60px;
+    @include breakpoint(sm-down){
+      margin-bottom: 25px;
+    }
+    @include breakpoint(xs){
+      margin-bottom: 20px;
+    }
     span{
       -webkit-text-fill-color: initial;
       color: $red;

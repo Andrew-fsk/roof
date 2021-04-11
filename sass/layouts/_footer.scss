@@ -81,9 +81,17 @@ footer{
   width: 30px;
   height: 30px;
   margin: 0 5px;
+  &:hover{
+    svg path{
+      fill: #ffffff;
+    }
+  }
   svg{
     max-height: 100%;
     max-width: 100%;
+    path{
+      transition: all .3s;
+    }
   }
 }
 

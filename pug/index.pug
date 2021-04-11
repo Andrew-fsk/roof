@@ -74,3 +74,58 @@ block content
                         span.stock-image.object-fit
                             img(loading='lazy' src='./images/stocks/stock (4).webp')
                         span.stock-title.color-gradient Вентиляционные выходы
+    section.services-block-wrap
+        .container
+            .services-title
+                .h1 Чем мы занимаемся?
+            .service-roof-decor
+            .services-container
+                .services-block
+                    each value, key in ['Монтаж металлочерепицы','Монтаж композитной черепицы','Монтаж гибкой черепицы','Монтаж фальцевой кровли','Монтаж керамической черепицы','Установка водосточной системы','Подшивка карнизных свесов','Утепление кровли']
+                        .service-item
+                            .service-image
+                                img(loading="lazy" src='./images/services/service (' + key+ ').webp')
+                            .service-title=value
+    section.our-works-wrap
+        .container
+            .our-work-title
+                .h2 Наши работы
+            .service-roof-decor
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        .slide-column
+                            .work-image.object-fit
+                                img(src='./images/works/work (1).jpg')
+                        .slide-column
+                            .work-image.object-fit
+                                img(src='./images/works/work (1).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (2).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (3).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (4).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (5).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (2).jpg')
+                    .swiper-slide
+                        .slide-column
+                            .work-image.object-fit
+                                img(src='./images/works/work (1).jpg')
+                        .slide-column
+                            .work-image.object-fit
+                                img(src='./images/works/work (1).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (2).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (3).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (4).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (5).jpg')
+                            .work-image.object-fit
+                                img(src='./images/works/work (2).jpg')
+                .swiper-button-prev
+                .swiper-button-next
